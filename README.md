@@ -1,70 +1,88 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Yoga Admission Form Project
 
-## Available Scripts
+#### This project is a simple web application for yoga admission. Users can fill out an admission form providing their personal details, and the data will be stored in a MySQL database. The project consists of both frontend and backend components.
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Client:** React
 
-### `npm test`
+**Server:** Node, Express
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Database:** Mysql
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Project Structure
+The project is structured into two main parts:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Frontend (YOGA FRONTEND): This part handles the user interface and form submission. It is built using React.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Backend (YOGA BACKEND): This part is responsible for handling form submissions, processing payments (mocked), and storing data in a MySQL database. It is built using Node.js and Express.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To run the project locally, follow these steps:
 
-## Learn More
+```bash
+  npm install my-project
+  cd my-project
+  npm start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+For backend go to this repo: https://github.com/jwalapc/yoga-backend and change the database credentials.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+  npm install my-project
+  cd my-project
+  node server.js
 
-### Code Splitting
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## Database
+Make sure you have a MySQL database set up. You can use tools like phpMyAdmin or MySQL Workbench.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Create a database named "yoga_admission" and run the SQL script provided in the "Database Setup" section.
 
-### Making a Progressive Web App
+Run the below Querry:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    
+### Usage/Examples
 
-### Advanced Configuration
+```javascript
+CREATE DATABASE IF NOT EXISTS yoga_admission;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+USE yoga_admission;
 
-### Deployment
+CREATE TABLE IF NOT EXISTS user_data (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  age INT NOT NULL,
+  gender VARCHAR(10) NOT NULL,
+  phoneNumber VARCHAR(15) NOT NULL,
+  emailAddress VARCHAR(255) NOT NULL,
+  batch VARCHAR(10) NOT NULL,
+  startDate DATE NOT NULL
+);
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Screenshots
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+
+
+## Assumptions
+
+- The payment processing is mocked and assumed to be always successful.
+- The project uses a MySQL database for data storage.
+
+- Styling is kept minimal, and you can customize it as per your design preferences
+
