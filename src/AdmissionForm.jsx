@@ -37,7 +37,7 @@ const AdmissionForm = () => {
       console.log('Payment successful!');
 
       // Call API to store data in the database
-      const response = await fetch('http://localhost:3001/submitForm', {
+      const response = await fetch('https://back-8tmj.onrender.com/submitForm', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
