@@ -73,7 +73,7 @@ CREATE TABLE IF NOT EXISTS user_data (
 ```
 
 
-## Screenshots
+## Er diagram
 
 ![YogaEr](https://github.com/jwalapc/yoga-frontend/assets/59509045/10dc8010-89d5-4222-b74f-1aa8bc6d7944)
 
