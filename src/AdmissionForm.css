@@ -3,12 +3,14 @@
   max-width: 400px;
   margin: auto;
   padding: 20px;
-  background-color: #ffffff;
+  background: linear-gradient(45deg, #8e44ad, #3498db); /* Purple to Blue gradient */
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  color: white; /* Set text color to white for better visibility on a colored background */
 }
 
+/* Rest of your styles remain unchanged */
 .form-group {
   margin-bottom: 15px;
 }
@@ -30,8 +32,8 @@ select {
 }
 
 .pay-button {
-  background-color: #2196f3;
-  color: white;
+  background-color: #fff; /* White background for better contrast */
+  color: #3498db; /* Blue color for the button text */
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -40,6 +42,6 @@ select {
 
 .note {
   font-size: 14px;
-  color: #777;
+  color: #ccc; /* Light gray color for the note text */
   margin-top: 10px;
 }
